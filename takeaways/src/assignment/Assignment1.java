@@ -1,3 +1,5 @@
+package assignment;
+
 /**
  * Assignment-1
  */
@@ -6,13 +8,13 @@ public class Assignment1 {
   
     // Write a program to print "My name is "-------
     public static void q1() { 
-        String name = "Ravi Prakash";
+        String name = "Tao";
         System.out.println("My name is " + name);
     }
   
     // Write a program to print "I am"----"year old"
     public static void q2() { 
-        int age = 21;
+        int age = 1000;
         System.out.println("I am " + age + " years old");
     }
     
