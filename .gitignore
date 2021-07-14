@@ -24,5 +24,10 @@ hs_err_pid*
 
 
 #####
-bin/*
-.settings/*
+/course/bin/*
+/course/.settings/*
+/course/.gitignore
+
+/takeaways/bin/*
+/takeaways/.settings/*
+/takeaways/.gitignore
