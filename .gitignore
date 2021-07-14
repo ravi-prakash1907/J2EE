@@ -27,4 +27,4 @@ hs_err_pid*
 course/bin/*
 takeaways/bin/*
 
-.settings/*
+course/.settings/*
