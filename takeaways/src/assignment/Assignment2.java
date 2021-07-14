@@ -108,5 +108,6 @@ public class Assignment2 {
         System.out.println("\n-------------------\n");
         //question 3
         q3();
+        
     }
 }
