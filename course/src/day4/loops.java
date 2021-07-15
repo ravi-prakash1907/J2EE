@@ -4,7 +4,7 @@ import java.util.*;
 
 public class loops {
 
-    void makePyramid(int height) {
+    static void makePyramid(int height) {
         for(int i = 1; i <= height; i++) {
             for (int j = 0; j < i; j++){
                 System.out.print("*");
@@ -13,15 +13,16 @@ public class loops {
         }
     }
 
-    int factorial(int num) {
+    static int factorial(int num) {
         if (num >= 0) {
             int fact = 1;
             for (int i = 1; i <= num; i++) {
                 fact *= i;
             }
+	    return fact;
         }
-
-        return fact;
+	else
+            return -1;
     }
 
     public static void main (String args[]) {
@@ -62,12 +63,12 @@ public class loops {
         ///////////////////////
 
         Scanner s = new Scanner(System.in);
-        System.out.print("\n\nEnter the height of desired pyramid: ")
+        System.out.print("\n\nEnter the height of desired pyramid: ");
         int h = s.nextInt();
-        this.pyramid(h);
+        makePyramid(h);
         
         ///////////////////////
 
-        System.out.println("\n\n"+h+"! = "+this.factorial(h));
+        System.out.println("\n\n"+h+"! = "+factorial(h));
     }
 }
