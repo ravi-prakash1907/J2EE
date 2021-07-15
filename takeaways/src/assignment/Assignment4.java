@@ -1,12 +1,12 @@
-package day4;
+package assignment;
 
 import java.util.Scanner;
 
 class ATM {
-    int balance;
+    float balance;
 
-    ATM(int bal = 10000) {
-        this.balance = (float) bal;
+    ATM() {
+        this.balance = 10000f;
     }
 
     // 1.Balance Enquiry
@@ -21,7 +21,7 @@ class ATM {
             System.out.println("Successfuly withdrawal: "+ammount);
             System.out.println("Balance left: "+this.balEnquiry());
         } else {
-            System.out.println("You do not have funds!!");
+            System.out.println("You do not have enough funds!!");
         }
     }
 
@@ -38,11 +38,11 @@ class ATM {
             case 1:  System.out.println("Current outstanding balance: "+this.balEnquiry());
                      break;
             case 2:  System.out.printf("Enter amount to withdraw: ");
-                     int w = s.nextFloat();
+                     float w = s.nextFloat();
                      this.withdraw(w);
                      break;
             case 3:  System.out.printf("Enter amount to deposit: ");
-                     int d = s.nextFloat();
+                     float d = s.nextFloat();
                      this.deposit(d);
                      break;
             default: System.out.println("Thankyou for visiting ATM!!");
@@ -59,14 +59,14 @@ class ATM {
             System.out.println("Current outstanding balance: "+this.balEnquiry());
         } else if(c == 2) {
             System.out.printf("Enter amount to withdraw: ");
-            int w = s.nextFloat();
+            float w = s.nextFloat();
             this.withdraw(w);
         } else if(c== 3) {
             System.out.printf("Enter amount to deposit: ");
-            int d = s.nextFloat();
+            float d = s.nextFloat();
             this.deposit(d);
         } else {
-            default: System.out.println("Thankyou for visiting ATM!!");
+            System.out.println("Thankyou for visiting ATM!!");
             return false;
         }
         
@@ -76,9 +76,10 @@ class ATM {
     // o/p
     public void dummyATM(int using) {
         Scanner s = new Scanner(System.in);
+        boolean askAgain;
 
         do {
-            System.out.println("MENU\n------\n");
+            System.out.println("\n\nMENU\n------\n");
             System.out.println("1. Balance Enquiry \n2. Withdrawal \n3. Deposit \n*  Any other key to exit!\n");
 
             System.out.print("Your choice: ");
@@ -111,14 +112,15 @@ public class Assignment4 {
         ATM myATM = new ATM();
 
         System.out.print("Enter 1 to use Switch and 2 to use If-Else logic: ");
-        int log = s.nextInt(System.in);
+        int logic = s.nextInt();
 
-        myATM.dummyATM(log);
+        myATM.dummyATM(logic);
     }
 
     // main
     public static void main (String args[]) {
-        
+    	Scanner s = new Scanner(System.in);
+    	
 		//question 1
         q1();
         System.out.println("\n----------- PRESS A KEY ------------\n");

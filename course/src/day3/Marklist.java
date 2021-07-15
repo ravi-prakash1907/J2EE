@@ -1,11 +1,11 @@
 package day3;
 import java.util.Scanner;
-class Student
+class Student2
 {
 int maths,physics,chemistry,total;
 String name;
 float pi=3.14f;
-Student()
+Student2()
 {
 float pi=4.14f;
 Scanner sc= new Scanner(System.in);	
@@ -20,7 +20,7 @@ this.chemistry=sc.nextInt();
 System.out.println("Enter the name of student");
 this.name=sc.next();
 }
-Student(int x,int y,int z,String n)
+Student2(int x,int y,int z,String n)
 {
 this.maths=x;
 this.physics=y;
@@ -44,8 +44,8 @@ System.out.println("Total marks"+total);
 public class Marklist {
 public static void main(String[] args) 
 {
-		Student prasad=new Student();
-		Student pradeep=new Student(50,60,70,"pradeep");
+		Student2 prasad=new Student2();
+		Student2 pradeep=new Student2(50,60,70,"pradeep");
 		prasad.totalmarks();
 		prasad.disptotal();
 		pradeep.totalmarks();
