@@ -8,6 +8,7 @@ class ATM {
     ATM() {
         this.balance = 10000f;
     }
+    
 
     // 1.Balance Enquiry
     float balEnquiry () {
