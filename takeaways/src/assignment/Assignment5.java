@@ -1,9 +1,12 @@
-package day5;
+package assignment;
 
-public class splitFun {
+import java.util.Scanner;
 
-	public static void main(String[] args) {
-		String str = "how are you ravi";
+public class Assignment5 {
+	// WAP to count name (or any word) in a sentance and 
+	// match with each word for its existance
+	static void q1() {
+		String str = "how are you lol";
 		String[] s = str.split(" ");
 
 		System.out.println(str.length());
@@ -15,7 +18,7 @@ public class splitFun {
 		
 		// check for a word
 		int nameCount = 0;
-		String name = "ravi";
+		String name = "lol";
 		
 		for(String st : s) {
 			if(st.equalsIgnoreCase(name)) {
@@ -27,7 +30,16 @@ public class splitFun {
 			}
 		}
 		System.out.println(name+" occured "+nameCount+" times.");
-
 	}
+
+	public static void main (String args[]) {
+	    	Scanner s = new Scanner(System.in);
+	    	
+			//question 1
+		q1();
+		System.out.println("\n----------- PRESS A KEY ------------\n");
+		s.nextLine();
+        
+    }
 
 }
