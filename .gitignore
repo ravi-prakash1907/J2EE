@@ -33,3 +33,4 @@ syncAll.sh
 /takeaways/bin/*
 /takeaways/.settings/*
 /takeaways/.gitignore
+/.metadata/

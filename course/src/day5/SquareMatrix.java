@@ -2,7 +2,7 @@ package day5;
 
 import java.util.Scanner;
 
-public class Squarematrix {
+public class SquareMatrix {
 
 	public static void main(String[] args) {
 		int matrix[][];
@@ -35,7 +35,5 @@ public class Squarematrix {
 				}
 				System.out.println();
 			}
-
 	}
-
 }
